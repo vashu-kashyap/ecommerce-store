@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MFM</title>
+    <link rel="stylesheet" href="../Css/main.css" />
+    <!-- slick slider css cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <!-- font awesome cdn javascript link -->
+    <script
+      src="https://kit.fontawesome.com/761fdd6338.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <!-- ----- nav start from here ----- -->
+      <nav>
+        <div class="nav-branding">
+          <h1>MFM</h1>
+        </div>
+        <div class="navbar">
+          <ul>
+            <li>
+              <a href="#">Topwear</a>
+            </li>
+            <li>
+              <a href="#">Bottomwear</a>
+            </li>
+            <li>
+              <a href="#">Innerwear</a>
+            </li>
+            <li>
+              <a href="#">Accessories</a>
+            </li>
+            <li>
+              <a href="#">New Arrival</a>
+            </li>
+          </ul>
+        </div>
+        <div class="search-bar">
+          <input type="search" placeholder="Search here..." />
+          <input type="button" value="Search" />
+        </div>
+        <div class="user-nav">
+          <ul>
+            <li>
+              <a href="#"><i class="fa-regular fa-user"></i> Profile</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-regular fa-heart"></i> Wishlist</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-bag-shopping"></i> Bag</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- ----- nav end from here ----- -->
+      <!-- single product page start from here  -->
+      <section class="single-page">
+        <div class="single-page-img">
+          <img
+            src="./images/feautured product/product3/hmgoepprod.jpeg"
+            alt=""
+            id="cover-img"
+          />
+          <div class="small-img">
+            <div class="small-img-col">
+              <img
+                src="./images/feautured product/product3/hmgoepprod.jpeg"
+                alt=""
+                class="click-img"
+              />
+            </div>
+            <div class="small-img-col">
+              <img
+                src="./images/feautured product/product3/hmgoepprod (2).jpeg"
+                alt=""
+                class="click-img"
+              />
+            </div>
+            <div class="small-img-col">
+              <img
+                src="./images/feautured product/product3/hmgoepprod (3).jpeg"
+                alt=""
+                class="click-img"
+              />
+            </div>
+            <div class="small-img-col">
+              <img
+                src="./images/feautured product/product3/hmgoepprod (4).jpeg"
+                alt=""
+                class="click-img"
+              />
+            </div>
+            <div class="small-img-col">
+              <img
+                src="./images/feautured product/product3/hmgoepprod (5).jpeg"
+                alt=""
+                class="click-img"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="single-page-details">
+            <h4>Home/<span>T-Shirt</span></h4>
+            <h2>Regular Fit Oxford shirt</h2>
+            <h1>Rs. 1,499.00</h1>
+            <select>
+                <option>Select Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>XL</option>
+            </select><br>
+            <input type="number" value="1" max="2" min="1" step="1"> 
+            <button>Add To Cart</button>
+            <div class="color-slector">
+               
+                <div class="color" style="background-color: black;">
+                    
+                </div>
+                <div class="color" style="background-color: olive;">
+
+                </div>
+                <div class="color" style="background-color:pink ;">
+
+                </div>
+                <div class="color" style="background-color:gray ;">
+
+                </div>
+            </div>
+            <h2>Product Details</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quod tempore facilis! Possimus nostrum similique iste non veritatis pariatur odit ratione asperiores sapiente nemo, repudiandae commodi assumenda ipsum fuga dolorum. Consectetur harum quasi laudantium maxime perferendis odio atque eos nesciunt quam, qui nostrum non quod impedit sequi vel blanditiis. Ab?</p>
+
+        </div>
+      </section>
+      <!-- single product page start end here  -->
+    </header>
+    <script>
+        var mainImg = document.getElementById("cover-img")
+        var smallImg = document.getElementsByClassName("click-img")
+        smallImg[0].onclick = function(){
+            mainImg.src = smallImg[0].src
+        }
+        smallImg[1].onclick = function(){
+            mainImg.src = smallImg[1].src
+        }
+        smallImg[2].onclick = function(){
+            mainImg.src = smallImg[2].src
+        }
+        smallImg[3].onclick = function(){
+            mainImg.src = smallImg[3].src
+        }
+        smallImg[4].onclick = function(){
+            mainImg.src = smallImg[4].src
+        }
+    </script>
+  </body>
+</html>

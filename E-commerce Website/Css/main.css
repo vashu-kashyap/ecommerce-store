@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:root {
+  --bg_color: #1d1d1f;
+  --text_color: #f5f5f7;
+  --text_color2: #6e6e73;
+  --bg_color2: #fff;
+}
+body {
+  background-color: var(--bg_color2);
+  
+}
+/* nav section css start from here  */
+nav{
+  display: flex;
+  background-color: var(--bg_color);
+  justify-content: space-around;
+  padding: 10px 10px;
+  align-items: center;
+  position:fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+}
+nav .nav-branding h1 {
+  color: var(--text_color);
+  letter-spacing: 5px;
+  font-size: 2rem;
+ 
+}
+nav .navbar ul,
+nav .user-nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+nav .navbar ul a,
+nav .user-nav ul a {
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: var(--text_color);
+  transition: 0.3s ease all;
+  padding-bottom: 10px;
+  gap: 2px;
+  font-weight: 600;
+}
+nav .navbar ul a:hover,
+nav .user-nav ul a:hover {
+  color: var(--text_color);
+  border-bottom: 1px solid;
+}
+nav .search-bar {
+  display: flex;
+  align-items: center;
+  gap: px;
+}
+nav .search-bar input {
+  padding: 10px 15px;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  outline: none;
+}
+nav .search-bar i {
+  color: var(--text_color);
+  font-size: 30px;
+}
+/* nav section css end from here  */
+
+/* banner section css start from here  */
+.banner-1{
+  background-image: url(../images/pexels-r-fera-432059.webp);
+  width: 100%;
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 100px;
+  position: sticky;
+  top: 62px;
+  left: 0;
+  z-index: -1;
+ 
+}
+.banner-1 h1{
+  color: var(--text_color2);
+  font-size: 5em;
+  text-align: right;
+}
+.banner-1 p{
+  font-size: 3em;
+  color: var(--bg_color2);
+  font-family: "Lato", sans-serif;
+}
+.banner-1 a{
+  text-decoration: none;
+  border: 2.5px solid var(--bg_color2);
+  padding:5px 20px;
+  font-size: 2em;
+  font-family: "Lato", sans-serif;
+  color: var(--bg_color2);
+  margin-top: 5px;
+  transition: 0.4s ease;
+  border-radius: 5px;
+  z-index: 20;
+}
+.banner-1 a:hover{
+  background-color: var(--bg_color2);
+  color: var(--text_color2);
+  transform: scale(1.05);
+}
+
+/* banner section css end from here  */
+/* featured product css start from here  */
+.featured-product {
+  background-color: var(--bg_color2);
+}
+.featured-product h2,
+.summer-collection h2,
+.suits  h2{
+  text-align: center;
+  font-size: 2.5em;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  color: var(--bg_color);
+}
+.featured-product p,
+.summer-collection p,
+.suits  p {
+  text-align: center;
+  font-size: 2.5em;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  color: var(--bg_color);
+}
+.featured-product h2 span,
+.summer-collection h2 span,
+.suits  h2 span{
+  color: var(--text_color2);
+}
+.featured-product .product-wraper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  gap:20px;
+  margin-top: 1em;
+}
+.featured-product .product-wraper .product-card {
+  width: 200px;
+  height: 350px;
+  background-color: var(--text_color);
+  transition: 0.3s;
+  cursor:pointer;
+}
+.featured-product .product-wraper .product-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.featured-product .product-wraper .product-card .img {
+  height: 300px;
+  width: 100%;
+}
+.featured-product .product-wraper .product-card .img img {
+  height: 300px;
+  width: 200px;
+  object-fit: cover;
+}
+.featured-product .product-wraper .product-card .img i {
+  position: relative;
+  left: 170px;
+  bottom: 30px;
+  font-size: 20px;
+  color: #6e6e73;
+  transition: 0.3s ease all;
+}
+.featured-product .product-wraper .product-card .img i:hover {
+  color: pink;
+}
+.featured-product .product-wraper .product-card h3,
+.featured-product .product-wraper .product-card p {
+  font-size: 15px;
+  padding: 2.5px 5px;
+  font-family: "Lato", sans-serif;
+  text-align: left;
+  color: var(--bg_color);
+}
+.featured-product .product-wraper .product-card h3{
+  color: var(--text_color2);
+}
+/* featured product css end from here  */
+/* summer-collection css start from here  */
+.summer-collection{
+  background-color: var(--bg_color2);
+}
+.summer-product{
+  display: flex; 
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: var(--bg_color2);
+}
+.summer-product .banner-2{
+  min-width: 650px;
+  max-height: 675px;
+  background-color: aqua;
+}
+.summer-product .banner-2 img{
+  width: 100%;
+  height: 675px;
+  object-fit: cover;
+}
+.card-wraper2{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+  flex-wrap: wrap;
+  width: 50vw;
+  min-height: 100vh;
+  align-items: center;
+}
+.card-wraper2 a{
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+  color: var(--text_color2);
+  font-family: "Lato", sans-serif;
+}
+.card-wraper2 a .card{
+  width: 200px;
+  height: 300px;
+  background-color: var(--text_color);
+  transition: 0.5s;
+}
+.card-wraper2 a .card:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card-wraper2 a .card img{
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+}
+.card-wraper2 a .card p{
+ font-size: 15px;
+}
+/* summer-collection css end from here  */
+/* New-arrival css start from here  */
+.new-arrival{
+  background-color: var(--bg_color2);
+}
+.new-arrival .banner3{
+ width: 100%;
+ height: 70vh;
+  background-image: url(../images/retro-man-dressed-shirt-lies-floor-posing.jpg);
+  background-position-y:-400px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size:3rem;
+  color: var(--bg_color);
+  font-family: "Lato", sans-serif;
+ 
+}
+.new-arrival .banner3 button{
+  padding:5px 10px;
+  font-size: 2rem;
+  border: 5px solid var(--bg_color);
+  color: var(--bg_color);
+  font-weight: 700;
+  transition: 0.5s;
+  background: transparent;
+}
+.new-arrival .banner3 button:hover{
+  color: var(--bg_color2);
+  background-color: var(--bg_color);
+}
+.new-arrival h2,.new-arrival p{
+  text-align: center;
+  font-size: 2.5em;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  color: var(--bg_color);
+}
+.new-arrival h2 span{
+  color: var(--text_color2);
+}
+
+/* New-arrival css end from here  */
+.suits{
+  margin-top: 1em;
+}
+.banner-4{
+  background: url(https://images.unsplash.com/photo-1629139033414-76f3c0eacf84?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80);
+  width: 650px;
+  height:675px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+.banner-4 h2{
+  color: var(--text_color);
+}
+.banner-4 button{
+  margin-top: 4.5em;
+  padding: 5px 20px;
+  font-size: 1.5rem;
+  background: transparent;
+  border: 5px solid var(--text_color);
+  color: var(--bg_color);
+  font-weight: 900;
+  transition: 0.5s;
+}
+.banner-4 button:hover{
+  background-color: black;
+  border: 5px solid var(--bg_color);
+  color: var(--text_color);
+}
+/* suits css start from here  */
+
+/* suits css end from here  */
+
+
+/* single page css start from here  */
+.single-page {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.single-page .single-page-img{
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  row-gap: 25px;
+  margin-top: 2.5rem;
+
+}
+.single-page .single-page-img img{
+  width: 440px;
+  height: 500px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.single-page .single-page-img .small-img{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  cursor: pointer;
+}
+.single-page .single-page-img .small-img img{
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+
+}
+.single-page .single-page-details{
+  width: 60%;
+  padding: 50px;
+  margin-top: 10px;
+}
+.single-page .single-page-details h4{
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+.single-page .single-page-details h4 span{
+  color: var(--text_color2);
+}
+.single-page .single-page-details h2{
+  font-size: 2em;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  color: var(--bg_color);
+  margin-top: 50px;
+}
+.single-page .single-page-details h1{
+  font-size: 2.5em;
+  color: var(--text_color2);
+  font-family: "Lato", sans-serif;
+  margin-top: 15px;
+  
+}
+.single-page .single-page-details select{
+  padding:5px 15px;
+  font-size: 16px;
+  margin-top:15px ;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+.single-page .single-page-details input{
+  padding:5px;
+  font-size: 16px;
+  margin-top:15px ;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  width: 130px;
+}
+.single-page .single-page-details input:focus{
+  outline: none;
+}
+.single-page .single-page-details button{
+  padding:5px;
+  font-size: 16px;
+  margin-top:15px ;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  width: 130px;
+  font-weight: 900;
+  margin-left: 15px;
+}
+.single-page .single-page-details button:focus{
+  outline: none;
+}
+.single-page .single-page-details p{
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1pxs;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+.single-page .single-page-details .color-slector{
+  display: flex;
+  gap: 25px;
+  margin-top: 30px;
+}
+.single-page .single-page-details .color-slector .color{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+/* news letter section start from here  */
+.news-letter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--bg_color);
+  padding: 15px;
+}
+.news-letter .content h2{
+  font-size: 2.5em;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  color: var(--text_color);
+}
+.news-letter .content h2 span{
+  color: var(--text_color2);
+}
+.news-letter .content p{
+  font-size: 1.5em;
+  font-family: "Lato", sans-serif;
+  color: var(--bg_color2);
+}
+.news-letter .mail input{
+  height: 50px;
+  font-size: 1.5em;
+  padding:10px;
+  font-family: "Lato", sans-serif;
+  border-radius: 5px;
+
+}
+
+
+/* news letter section start end here  */
+/* footer letter section start start here  */
+
+.footer-link{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+.footer-link .link h6{
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  color: var(--text_color2);
+}
+.footer-link .link ul li{
+  list-style: none;
+  margin-top: 15px;
+}
+.footer-link .link li a{
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  color: var(--text_color2);
+  transition: 0.5s;
+}
+.footer-link .link li a:hover{
+  color: var(--bg_color);
+}
+footer .social-link ul{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  font-size: 20px;
+}
+footer .social-link ul li{
+  list-style: none;
+}
+footer .social-link ul a{
+  text-decoration: none;
+  color: var(--text_color2);
+  transition: 0.5s;
+}
+footer .social-link ul a:hover{
+  color: var(--bg_color);
+}
+.copyright{
+  margin-top: 15px;
+  padding: 0 400px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  margin-bottom: 15px;
+}
+footer h2{
+  text-align: center;
+  margin: 15px 0;
+  font-size: 2.5rem;
+  color: var(--text_color2);
+  ba
+}
+
+
+
+/* footer letter section start end here  */
+
+
